@@ -15,6 +15,11 @@ class dice:
         self.value = random.randint(1, self.sides)
 
     def getValue(self):
+        if self.value == 3:
+            pygame.draw.rect(win, (0, 0, 0), ((0, 0), (500, 500)), 1)
+            pygame.draw.circle(win, (0, 0, 0), (250, 250), (50))
+            pygame.draw.circle(win, (0, 0, 0), (125, 125), (50))
+            pygame.draw.circle(win, (0, 0, 0), (375, 375), (50))
         if self.value == 4:
             pygame.draw.circle(win, (0,0,0), (100, 100), 50, 50)
             pygame.draw.circle(win, (0,0,0), (400, 100), 50, 50)

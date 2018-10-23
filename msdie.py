@@ -3,6 +3,7 @@ import random, pygame
 # Initialize Window
 win = pygame.display.set_mode((500, 500))
 
+pygame.init()
 
 # dice class
 class dice:

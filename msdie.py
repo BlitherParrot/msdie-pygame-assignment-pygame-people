@@ -21,13 +21,13 @@ class dice:
             white = (255, 255, 255)
             black = (0, 0, 0)
             bg_colour = (212, 76, 134)
-            pygame.draw.rect(screen, bg_colour, (0, 0, 500, 500))  # Draws the background
-            pygame.draw.rect(screen, white, (100, 100, 300, 300))  # Draws the back of the die in white
-            pygame.draw.circle(screen, black, (250, 250), 25)  # Draws one black dot in center
+            pygame.draw.rect(win, bg_colour, (0, 0, 500, 500))  # Draws the background
+            pygame.draw.rect(win, white, (100, 100, 300, 300))  # Draws the back of the die in white
+            pygame.draw.circle(win, black, (250, 250), 25)  # Draws one black dot in center
         if self.value == 2:
-            pygame.draw.rect(screen, (255, 255, 255), [100, 100, 300, 300])
-            pygame.draw.circle(screen, (0, 0, 0), (175, 175), 50, 0)
-            pygame.draw.circle(screen, (0, 0, 0), (325, 325), 50, 0)
+            pygame.draw.rect(win, (255, 255, 255), [100, 100, 300, 300])
+            pygame.draw.circle(win, (0, 0, 0), (175, 175), 50, 0)
+            pygame.draw.circle(win, (0, 0, 0), (325, 325), 50, 0)
         if self.value == 3:
             pygame.draw.rect(win, (0, 0, 0), ((0, 0), (500, 500)), 1)
             pygame.draw.circle(win, (0, 0, 0), (250, 250), (50))
@@ -39,7 +39,7 @@ class dice:
             pygame.draw.circle(win, (0, 0, 0), (100, 400), 50, 50)
             pygame.draw.circle(win, (0, 0, 0), (400, 400), 50, 50)
         if self.value == 5:
-            # Initialize radius, diameter ( 2 * d )
+            # Initialize radius, diameter ( 2 * r)
             r = 40
             d = 2 * r
 

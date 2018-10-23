@@ -16,11 +16,9 @@ class dice:
 
     def getValue(self):
         if self.value == 2:
-                pygame.draw.rect(screen, (255, 255, 255), [100, 100, 300, 300])
-                pygame.draw.circle(screen, (0, 0, 0), (175, 175), 50, 0)
-                pygame.draw.circle(screen, (0, 0, 0), (325, 325), 50, 0)
-                pygame.display.update()
-                screen.fill((66, 44, 241))
+            pygame.draw.rect(screen, (255, 255, 255), [100, 100, 300, 300])
+            pygame.draw.circle(screen, (0, 0, 0), (175, 175), 50, 0)
+            pygame.draw.circle(screen, (0, 0, 0), (325, 325), 50, 0)
         if self.value == 3:
             pygame.draw.rect(win, (0, 0, 0), ((0, 0), (500, 500)), 1)
             pygame.draw.circle(win, (0, 0, 0), (250, 250), (50))

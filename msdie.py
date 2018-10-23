@@ -15,10 +15,21 @@ class dice:
         self.value = random.randint(1, self.sides)
 
     def getValue(self):
+        # Draws dies with 1 dot if value is 1
+        if self.value == 1:
+            # Preset colours
+            white = (255, 255, 255)
+            black = (0, 0, 0)
+            bg_colour = (212, 76, 134)
+            pygame.draw.rect(screen, bg_colour, (0, 0, 500, 500))  # Draws the background
+            pygame.draw.rect(screen, white, (100, 100, 300, 300))  # Draws the back of the die in white
+            pygame.draw.circle(screen, black, (250, 250), 25)  # Draws one black dot in center
+        
         if self.value == 5:
             # Initialize radius, diameter ( 2 * d )
             r = 40
             d = 2 * r
+
             # Draw 5 circle, radius r, offset d from the sides
             pygame.draw.circle(win, (0, 0, 0), (d, d), r)
             pygame.draw.circle(win, (0, 0, 0), (500 - d, 500 - d), r)
